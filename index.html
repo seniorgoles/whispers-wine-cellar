@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers Wine Cellar - Every Bottle Tells a Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================= Header ======================= -->
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Whispers Wine Cellar</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#our-wines">Our Wines</a></li>
+                <li><a href="#the-story">The Story</a></li>
+                <li><a href="#food-pairings">Food Pairings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======================= Hero Section ======================= -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Whispers: Every Bottle Tells a Story.</h1>
+            <a href="#our-wines" class="btn">Discover Our Collection</a>
+        </div>
+    </section>
+
+    <!-- ======================= "Our Wines" Section ======================= -->
+    <main>
+        <section id="our-wines" class="wine-section">
+            <h2>Our Wines</h2>
+            <div class="wine-grid">
+                <!-- Wine 1 -->
+                <div class="wine-card" data-wine="solarice">
+                    <img src="images/solarice-ice-wine.jpg" alt="Solaris Ice Wine">
+                    <h3>Solaris Ice Wine</h3>
+                </div>
+                <!-- Wine 2 -->
+                <div class="wine-card" data-wine="midnight">
+                    <img src="images/midnight-merlot.jpg" alt="Midnight Merlot">
+                    <h3>Midnight Merlot</h3>
+                </div>
+                <!-- Wine 3 -->
+                <div class="wine-card" data-wine="golden">
+                    <img src="images/golden-riesling.jpg" alt="Golden Riesling">
+                    <h3>Golden Riesling</h3>
+                </div>
+                <!-- Wine 4 -->
+                <div class="wine-card" data-wine="crimson">
+                    <img src="images/crimson-cabernet.jpg" alt="Crimson Cabernet">
+                    <h3>Crimson Cabernet</h3>
+                </div>
+                <!-- Wine 5 -->
+                <div class="wine-card" data-wine="aurora">
+                    <img src="images/aurora-rose.jpg" alt="Aurora Rosé">
+                    <h3>Aurora Rosé</h3>
+                </div>
+                <!-- Wine 6 -->
+                <div class="wine-card" data-wine="starfall">
+                    <img src="images/starfall-chardonnay.jpg" alt="Starfall Chardonnay">
+                    <h3>Starfall Chardonnay</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= "The Story" Section ======================= -->
+        <section id="the-story" class="story-section">
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="images/vineyard.jpg" alt="Vineyard at sunset">
+                </div>
+                <div class="story-text">
+                    <h2>Our Philosophy</h2>
+                    <p>At Whispers, we believe that wine is more than just a beverage; it's a narrative captured in a bottle. Our vineyards are tended with a respect for nature's quiet rhythms, allowing each grape to develop its own voice. From the sun-drenched hillsides to the cool, silent cellars, we guide our wines on their journey, crafting vintages that are not merely tasted, but felt. Each sip is a chapter, a memory, a whisper of the earth itself.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= "Food Pairings" Section ======================= -->
+        <section id="food-pairings" class="pairings-section">
+            <h2>A Symphony of Flavors</h2>
+            <p class="subtitle">Discover the perfect harmony between our wines and your favorite dishes. Hover over a category to see our recommendations.</p>
+            <div class="pairings-container">
+                <div class="food-category" data-pairings="seafood">
+                    <h4>Seafood & Shellfish</h4>
+                </div>
+                <div class="food-category" data-pairings="cheese">
+                    <h4>Artisanal Cheeses</h4>
+                </div>
+                <div class="food-category" data-pairings="red-meat">
+                    <h4>Roasted Meats</h4>
+                </div>
+                <div class="food-category" data-pairings="spicy">
+                    <h4>Spicy Dishes</h4>
+                </div>
+                 <div class="food-category" data-pairings="dessert">
+                    <h4>Decadent Desserts</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= Footer ======================= -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>Whispers Wine Cellar</h4>
+                <p>Crafting stories, one bottle at a time. Experience the whisper of the vineyard in every glass.</p>
+            </div>
+            <div class="footer-signup">
+                <h4>Join Our List</h4>
+                <p>Be the first to know about new vintages and exclusive events.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Whispers Wine Cellar. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ======================= Modal Structure (Initially Hidden) ======================= -->
+    <div id="wine-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <!-- JS will populate this content dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
